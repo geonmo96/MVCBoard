@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE context>
+<Context>
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+<Resource
+name = "jdbc/Oracle"
+auth = "Container"
+type = "javax.sql.DataSource"
+driverClassName = "oracle.jdbc.OracleDriver"
+url = "jdbc:oracle:thin:@127.0.0.1:1521/xepdb1"
+username="hr" password="hr"
+maxTotal="20" maxIdle="20" maxWaitmillis="-1"/>
+</Context>
+<!-- 위의 정보는 데이터베이스 마다 다르고, api문서 또는 구글링을 통해 정보를 얻을 수 있음 -->
